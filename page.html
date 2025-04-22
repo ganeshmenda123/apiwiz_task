@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MoodMate</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="main-page">
+    <div class="card">
+      <div class="header">
+        <h2>MoodMate</h2>
+        <div id="weather">25°C</div>
+      </div>
+
+      <div id="currentDate" class="date-display"></div>
+
+      <label class="prompt">How are you feeling today?</label>
+      <div class="mood-options">
+        <button class="mood-btn" data-mood="😊">😊</button>
+        <button class="mood-btn" data-mood="😐">😐</button>
+        <button class="mood-btn" data-mood="😔">😔</button>
+        <button class="mood-btn" data-mood="😠">😠</button>
+        <button class="mood-btn" data-mood="😁">😁</button>
+      </div>
+
+      <textarea id="note" placeholder="Add a note..."></textarea>
+      <button onclick="saveEntry()" class="btn">Save</button>
+    </div>
+
+    <div class="notes-section">
+      <h3>All Notes</h3>
+      <div id="entries"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
